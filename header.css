@@ -29,26 +29,25 @@
     display: none;
     position: absolute;
     top: 100%;
-    left: 0; /* Adiciona alinhamento à esquerda */
+    left: 0; 
     width: 60vw;
-    background-color: var(--branco); /* Adiciona um fundo para a lista */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
-    z-index: 1000; /* Garante que o menu fique acima de outros conteúdos */
+    background-color: var(--branco); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .container__botao:checked ~ .lista-menu {
     display: block;
 }
 
-.lista-menu__titulo, 
-.lista-menu__item {
+.lista-menu__titulo, .lista-menu__item {
     padding: 1em;
     background-color: var(--branco);
 }
 
 .lista-menu__titulo {
     color: var(--amarelo);
-    font-weight: bold; /* Adiciona um destaque ao título */
+    font-weight: bold; 
 }
 
 .lista-menu__link {
@@ -57,9 +56,9 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
-    text-decoration: none; /* Remove o sublinhado dos links */
-    display: inline-block; /* Garante que o link ocupe apenas o necessário */
-    padding: 0.5em 0; /* Adiciona algum padding vertical */
+    text-decoration: none; 
+    display: inline-block; 
+    padding: 0.5em 0; 
 }
 
 .lista-menu__link:hover {
