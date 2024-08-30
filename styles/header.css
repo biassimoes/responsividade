@@ -1,66 +1,76 @@
 .cabecalho__menu-hamburguer {
     width: 24px;
     height: 24px;
-    background-image: url("imagens/menu.png");
+    background-image: url("imagens/menu.png"); /* Verifique o caminho da imagem */
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
 }
 
+/* Estilo do cabeçalho */
 .cabecalho {
-    background-color: var(--branco);
+    background-color: var(--branco); /* Certifique-se de definir a variável no CSS */
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 0 1em; /* Adiciona um pouco de padding para espaçamento interno */
+    padding: 0 1em; /* Adiciona padding para espaçamento interno */
 }
 
+/* Estilo do container */
 .container {
     display: flex;
     align-items: center;
 }
 
+/* Estilo da imagem dentro do container */
 .container__imagem {
-    padding: 1em;
+    padding: 1em; /* Ajuste se necessário */
 }
 
+/* Estilo da lista de menu */
 .lista-menu {
-    display: none;
+    display: none; /* Oculta o menu inicialmente */
     position: absolute;
-    top: 100%;
-    left: 0; 
-    width: 60vw;
-    background-color: var(--branco); 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    top: 100%; /* Posiciona abaixo do cabeçalho */
+    left: 0; /* Alinha à esquerda do cabeçalho */
+    width: 60vw; /* Ajuste a largura conforme necessário */
+    background-color: var(--branco); /* Certifique-se de definir a variável no CSS */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    z-index: 1000; /* Garante que o menu fique acima de outros conteúdos */
 }
 
+/* Exibe a lista de menu quando o checkbox está marcado */
 .container__botao:checked ~ .lista-menu {
     display: block;
 }
 
-.lista-menu__titulo, .lista-menu__item {
+/* Estilo dos itens da lista de menu */
+.lista-menu__titulo,
+.lista-menu__item {
     padding: 1em;
-    background-color: var(--branco);
+    background-color: var(--branco); /* Certifique-se de definir a variável no CSS */
 }
 
+/* Estilo do título da lista de menu */
 .lista-menu__titulo {
-    color: var(--amarelo);
-    font-weight: bold; 
+    color: var(--amarelo); /* Certifique-se de definir a variável no CSS */
+    font-weight: bold; /* Destaca o título */
 }
 
+/* Estilo dos links na lista de menu */
 .lista-menu__link {
-    background: var(--roxo-degrade);
+    background: var(--roxo-degrade); /* Certifique-se de definir a variável no CSS */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
-    text-decoration: none; 
-    display: inline-block; 
-    padding: 0.5em 0; 
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: inline-block;
+    padding: 0.5em 0; /* Adiciona padding vertical */
 }
 
+/* Estilo dos links ao passar o mouse */
 .lista-menu__link:hover {
-    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
