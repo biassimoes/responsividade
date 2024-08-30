@@ -9,7 +9,7 @@
 
 /* Estilo do cabeçalho */
 .cabecalho {
-    background-color: var(--branco); /* Certifique-se de definir a variável no CSS */
+    background-color: var(--cor-de-fundo); /* Certifique-se de definir a variável no CSS */
     display: flex;
     justify-content: space-between;
     align-items: center;
