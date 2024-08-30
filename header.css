@@ -1,4 +1,4 @@
-.cabecalho__menu-hamburguer{
+.cabecalho__menu-hamburguer {
     width: 24px;
     height: 24px;
     background-image: url("../responsividade/imagens/menu.png");
@@ -7,47 +7,61 @@
     display: inline-block;
 }
 
-.cabecalho{
+.cabecalho {
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding: 0 1em; /* Adiciona um pouco de padding para espaçamento interno */
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
 }
 
-.container__imagem{
+.container__imagem {
     padding: 1em;
 }
 
-.lista-menu{
+.lista-menu {
     display: none;
     position: absolute;
     top: 100%;
+    left: 0; /* Adiciona alinhamento à esquerda */
     width: 60vw;
+    background-color: var(--branco); /* Adiciona um fundo para a lista */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    z-index: 1000; /* Garante que o menu fique acima de outros conteúdos */
 }
 
-.container__botao:checked~.lista-menu{
+.container__botao:checked ~ .lista-menu {
     display: block;
 }
 
-.lista-menu__titulo, .lista-menu__item{
+.lista-menu__titulo, 
+.lista-menu__item {
     padding: 1em;
     background-color: var(--branco);
 }
 
-.lista-menu__titulo{
+.lista-menu__titulo {
     color: var(--amarelo);
+    font-weight: bold; /* Adiciona um destaque ao título */
 }
 
-.lista-menu__link{
+.lista-menu__link {
     background: var(--roxo-degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: inline-block; /* Garante que o link ocupe apenas o necessário */
+    padding: 0.5em 0; /* Adiciona algum padding vertical */
+}
+
+.lista-menu__link:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
 }
